@@ -1,5 +1,5 @@
 import { useState } from 'react'
-const [selectedColor, setSelectedColor] = useState("")
+
 // Write your Color component here
 const Color = ({color, setSelectedColor}) => {
   return ( <div className={color}
@@ -8,6 +8,7 @@ const Color = ({color, setSelectedColor}) => {
   )
 }
 const App = () => {
+  const [selectedColor, setSelectedColor] = useState("")
   return (
     <div id="container">
       <div id="navbar">
